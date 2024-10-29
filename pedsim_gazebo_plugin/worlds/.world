@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 
-    <!-- this file is auto generated using pedsim_gazebo_plugin pkg -->    
-    <sdf version="1.5">
-      <world name="default">
-      
+  <!-- this file is auto generated using pedsim_gazebo_plugin pkg -->    
+  <sdf version="1.5">
+    <world name="default">
+    
       <!-- Ground Plane -->
       
       <include>
@@ -13,5 +13,8 @@
       <include>
         <uri>model://sun</uri>
       </include>
-    
-        
+
+    </world>
+  </sdf>
+</xml>
+

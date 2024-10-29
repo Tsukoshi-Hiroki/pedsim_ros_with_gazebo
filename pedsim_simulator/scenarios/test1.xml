@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+
+    <!--Waypoints (incl. WaitingQueues)-->
+    <waypoint id="enter_westdoor" x="3" y="16" r="3"/>
+    <waypoint id="enter_guard" x="7" y="14" r="5"/>
+    <waypoint id="enter_sofa" x="13" y="18" r="5"/>
+    <waypoint id="enter_lift" x="28" y="20" r="3"/>
+
+    <waypoint id="enter_southdoor" x="4" y="2" r="5"/>
+    <waypoint id="enter_middle" x="15" y="11" r="5"/>
+    <waypoint id="enter_lab" x="22" y="9" r="5"/>
+    <waypoint id="enter_corridor" x="26" y="10" r="5"/>
+    <waypoint id="left_hall" x="30" y="9" r="3"/>
+
+    <waypoint id="enter_restroom" x="14" y="22" r="3"/>
+    <waypoint id="enter_classroom" x="16" y="6" r="3"/>
+    <waypoint id="enter_stair" x="14.5" y="10" r="5"/>
+
+    <waypoint id="robot_goal" x="26" y="23" r="5"/>
+    <waypoint id="robot_start" x="1" y="1" r="5"/>
+
+    <waypoint id="bookshop_entry" x="25" y="9" r="3"/>
+    <waypoint id="bookshop_exit" x="25" y="21" r="3"/>
+
+    <waypoint id="coffee_entry" x="3" y="17" r="3"/>
+    <waypoint id="coffee_exit" x="3" y="10" r="3"/>
+
+    <queue id="info_desk" x="20" y="20" direction="0"/>
+	
+
+    <agent x="2.5" y="2.5" n="1" dx="0" dy="0" type="2">
+        <addwaypoint id="robot_start"/>
+        <addwaypoint id="robot_goal"/>
+    </agent>
+
+        <!--AgentClusters-->
+    <agent x="1" y="10" n="1" dx="1" dy="1.5" type="1">
+        <addwaypoint id="bookshop_entry"/>
+        <addwaypoint id="bookshop_exit"/>
+        <addwaypoint id="coffee_entry"/>
+        <addwaypoint id="coffee_exit"/>
+    </agent>
+
+    <agent x="22" y="20" n="1" dx="1.5" dy="1" type="1">
+        <addwaypoint id="coffee_entry"/>
+        <addwaypoint id="coffee_exit"/>
+        <addwaypoint id="bookshop_entry"/>
+        <addwaypoint id="bookshop_exit"/>
+    </agent>
+
+    <agent x="18" y="19" n="1" dx="1.5" dy="1" type="1">
+        <addwaypoint id="coffee_entry"/>
+        <addwaypoint id="bookshop_exit"/>
+    </agent>
+
+    <agent x="30" y="10" n="1" dx="1.5" dy="1" type="1">
+        <addwaypoint id="left_hall"/>
+        <addwaypoint id="coffee_exit"/>
+    </agent>
+
+    <agent x="2" y="15" n="1" dx="1" dy="1.5" type="1">
+        <addwaypoint id="enter_lift"/>
+        <addwaypoint id="enter_westdoor"/>
+    </agent>
+
+    <agent x="14" y="15" n="1" dx="0.8" dy="1.5" type="1">
+        <addwaypoint id="enter_restroom"/>
+        <addwaypoint id="enter_classroom"/>
+    </agent>
+
+    
+</scenario>
